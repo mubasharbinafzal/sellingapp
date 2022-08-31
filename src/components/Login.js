@@ -43,7 +43,7 @@ export default function Login() {
 
     const onSubmit = async (values) => {
         try {
-            const res = await fetch(process.env.REACT_APP_API_END_POINT + "user", {
+            const res = await fetch(`https://sellingapptest.herokuapp.com/api/v1/user`, {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
