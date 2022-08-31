@@ -74,7 +74,7 @@ export default function PersonalInfo() {
     const onSubmit = async (values) => {
 
         try {
-            const res = await fetch(`https://hook.us1.make.com/vbv61km18q7d3k7fps1psrg3qyr3643p`, {
+            const res = await fetch(process.env.PERSONALINFO, {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
